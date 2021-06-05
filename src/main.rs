@@ -1,8 +1,8 @@
-use rltk::{Rltk, GameState};
+use rltk::{Rltk, GameState}; // Obtain Rltk and GameState from the rltk namespace
 
-struct State {}
-impl GameState for State {
-    fn tick(&mut self, ctx : &mut Rltk) {
+struct State {} 
+impl GameState for State { // State structure implements the trait GameState
+    fn tick(&mut self, ctx : &mut Rltk) {c
         ctx.cls();
         ctx.print(1, 1, "Hello Rust World");
     }
